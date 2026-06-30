@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./favicon.png?v=5" />
+    <link rel="shortcut icon" type="image/png" href="./favicon.png?v=5" />
+    <link rel="apple-touch-icon" href="./favicon.png?v=5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | VIETCRAFTERS</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+</head>
+
+<body data-lang="vi">
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="./index.html" class="logo"><img src="./images/logo.png?v=4" alt="VIETCRAFTERS" style="height: 40px; width: auto; display: block;"></a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="./index.html"><span class="lang-vi">TRANG CHỦ</span><span class="lang-en">HOME</span><span class="lang-ja">家</span><span class="lang-ko">집</span><span class="lang-de">HEIM</span><span class="lang-fr">MAISON</span></a></li>
+            
+                    <li><a href="./about.html"><span class="lang-vi">VỀ CHÚNG TÔI</span><span class="lang-en">ABOUT US</span><span class="lang-ja">私たちについて</span><span class="lang-ko">회사 소개</span><span class="lang-de">ÜBER UNS</span><span class="lang-fr">À PROPOS DE NOUS</span></a></li>
+            
+                    <li><a href="./products.html" class="active" ><span class="lang-vi">SẢN PHẨM</span><span class="lang-en">PRODUCTS</span><span class="lang-ja">製品</span><span class="lang-ko">제품</span><span class="lang-de">PRODUKTE</span><span class="lang-fr">PRODUITS</span></a></li>
+            
+                    <li><a href="./materials.html"><span class="lang-vi">VẬT LIỆU</span><span class="lang-en">MATERIALS</span><span class="lang-ja">材料</span><span class="lang-ko">재료</span><span class="lang-de">MATERIALIEN</span><span class="lang-fr">MATÉRIELS</span></a></li>
+            
+                    <li><a href="./contact.html"><span class="lang-vi">LIÊN HỆ</span><span class="lang-en">CONTACT US</span><span class="lang-ja">接触</span><span class="lang-ko">연락하다</span><span class="lang-de">KONTAKT</span><span class="lang-fr">CONTACT</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="lang-switcher dropdown">
+                    <button class="dropdown-toggle" id="langDropdownBtn">
+                        <span class="current-lang">VI</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <button class="lang-btn active" data-lang="vi">Việt Nam (VI)</button>
+                        <button class="lang-btn" data-lang="en">English (EN)</button>
+                        <button class="lang-btn" data-lang="ja">日本語 (JA)</button>
+                        <button class="lang-btn" data-lang="ko">한국어 (KO)</button>
+                        <button class="lang-btn" data-lang="de">Deutsch (DE)</button>
+                        <button class="lang-btn" data-lang="fr">Français (FR)</button>
+                    </div>
+                </div>
+                <button class="search-btn" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <a href="#" class="btn btn-primary"><span class="lang-vi">YÊU CẦU</span><span class="lang-en">INQUIRY</span><span class="lang-ja">問い合わせ</span><span class="lang-ko">문의</span><span class="lang-de">ANFRAGE</span><span class="lang-fr">ENQUÊTE</span></a>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="products-page section-padding">
+        <div class="container">
+            <div class="page-header">
+                <div class="breadcrumbs">
+                    <span class="lang-vi">TRANG CHỦ / <span class="current">SẢN PHẨM</span></span>
+                    <span class="lang-en">HOME / <span class="current">PRODUCTS</span><span class="lang-ja">ホーム / <span class="current">製品</span><span class="lang-ko">홈 / <span class="current">제품</span><span class="lang-de">HOME / <span class="current">PRODUKTE</span><span class="lang-fr">ACCUEIL / <span class="current">PRODUITS</span></span>
+                </div>
+                <h1 class="page-title text-serif animate-on-scroll fade-in-up">
+                    <span class="lang-vi">Đồ Thủ Công & Lưu Trữ</span>
+                    <span class="lang-en">Artisanal Storage & Housewares</span><span class="lang-ja">工芸品の保管庫と家庭用品</span><span class="lang-ko">장인의 보관 및 가정용품</span><span class="lang-de">Handwerkliche Aufbewahrung und Haushaltswaren</span><span class="lang-fr">Rangement artisanal et articles ménagers</span>
+                </h1>
+                <p class="page-desc animate-on-scroll fade-in-up">
+                    <span class="lang-vi">Khám phá bộ sưu tập đồ thủ công mỹ nghệ Việt Nam, được đan lát từ sợi tự nhiên bền vững dành cho thị trường xuất khẩu toàn cầu.</span>
+                    <span class="lang-en">Discover our curated collection of handcrafted Vietnamese storage solutions, woven from sustainable natural fibers for global wholesale markets.</span><span class="lang-ja">世界の卸売市場向けに、持続可能な天然繊維で織られた、手作りのベトナム製収納ソリューションの厳選されたコレクションをご覧ください。</span><span class="lang-ko">글로벌 도매 시장을 위해 지속 가능한 천연 섬유로 엮은 엄선된 베트남 수제 수납 솔루션 컬렉션을 만나보세요.</span><span class="lang-de">Entdecken Sie unsere kuratierte Sammlung handgefertigter vietnamesischer Aufbewahrungslösungen, gewebt aus nachhaltigen Naturfasern für globale Großhandelsmärkte.</span><span class="lang-fr">Découvrez notre collection de solutions de rangement vietnamiennes fabriquées à la main, tissées à partir de fibres naturelles durables pour les marchés de gros mondiaux.</span>
+                </p>
+            </div>
+
+            <div class="products-layout">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="search-group" style="margin-bottom: 2rem;">
+                        <div class="search-input-wrapper" style="position: relative;">
+                            <input type="text" id="productSearch" class="search-input" placeholder="Search..." style="width: 100%; padding: 0.8rem 1rem 0.8rem 2.5rem; border: 1px solid var(--gray-border); border-radius: 4px; font-family: var(--font-primary); font-size: 0.9rem; outline: none; transition: border-color 0.3s;">
+                            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-light)" stroke-width="2" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%);">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4 class="filter-title animate-on-scroll fade-in-up">
+                            <span class="lang-vi">DANH MỤC</span>
+                            <span class="lang-en">CATEGORY</span><span class="lang-ja">カテゴリ</span><span class="lang-ko">범주</span><span class="lang-de">KATEGORIE</span><span class="lang-fr">CATÉGORIE</span>
+                        </h4>
+                        <label class="radio-label">
+                            <input type="radio" name="cat" value="all" class="filter-category" checked>
+                            <span class="radiomark"></span>
+                            <span class="lang-vi">Tất cả</span><span class="lang-en">All</span><span class="lang-ja">全て</span><span class="lang-ko">모두</span><span class="lang-de">Alle</span><span class="lang-fr">Tous</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="cat" value="hyacinth_products" class="filter-category">
+                            <span class="radiomark"></span>
+                            <span class="lang-vi">Sản phẩm lục bình</span><span class="lang-en">Water Hyacinth Products</span><span class="lang-ja">ホテイアオイ</span><span class="lang-ko">부레옥잠</span><span class="lang-de">Wasserhyazinthe</span><span class="lang-fr">Jacinthe d'eau</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="cat" value="bamboo_products" class="filter-category">
+                            <span class="radiomark"></span>
+                            <span class="lang-vi">Sản phẩm tre nứa</span><span class="lang-en">Bamboo Products</span><span class="lang-ja">竹製品</span><span class="lang-ko">대나무 제품</span><span class="lang-de">Bambusprodukte</span><span class="lang-fr">Produits en bambou</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="cat" value="grass_straws" class="filter-category">
+                            <span class="radiomark"></span>
+                            <span class="lang-vi">Ống hút cỏ bàng</span><span class="lang-en">Grass Straws</span><span class="lang-ja">レピロニアストロー</span><span class="lang-ko">레피로니아 빨대</span><span class="lang-de">Lepironia-Strohhalme</span><span class="lang-fr">Pailles de lépironia</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="cat" value="reed_straws" class="filter-category">
+                            <span class="radiomark"></span>
+                            <span class="lang-vi">Ống hút sậy</span><span class="lang-en">Reed Straws</span><span class="lang-ja">葦ストロー</span><span class="lang-ko">갈대 빨대</span><span class="lang-de">Schilfstrohhalme</span><span class="lang-fr">Pailles en roseau</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="cat" value="sugarcane_straws" class="filter-category">
+                            <span class="radiomark"></span>
+                            <span class="lang-vi">Ống hút bã mía</span><span class="lang-en">Sugarcane Straws</span><span class="lang-ja">サトウキビストロー</span><span class="lang-ko">사탕수수 빨대</span><span class="lang-de">Zuckerrohrstrohhalme</span><span class="lang-fr">Pailles de canne à sucre</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="cat" value="paper_straws" class="filter-category">
+                            <span class="radiomark"></span>
+                            <span class="lang-vi">Ống hút giấy</span><span class="lang-en">Paper Straws</span><span class="lang-ja">紙ストロー</span><span class="lang-ko">종이 빨대</span><span class="lang-de">Papierstrohhalme</span><span class="lang-fr">Pailles en papier</span>
+                        </label>
+                    </div>
+
+                    <div class="sustainable-box">
+                        <h5>
+                            <span class="lang-vi">LỰA CHỌN BỀN VỮNG</span>
+                            <span class="lang-en">SUSTAINABLE CHOICE</span><span class="lang-ja">持続可能な選択</span><span class="lang-ko">지속 가능한 선택</span><span class="lang-de">NACHHALTIGE WAHL</span><span class="lang-fr">CHOIX DURABLE</span>
+                        </h5>
+                        <p class="animate-on-scroll fade-in-up">
+                            <span class="lang-vi">Sản phẩm của chúng tôi đạt chứng nhận BSCI và được chế tác từ 100% sợi tự nhiên phân hủy sinh học.</span>
+                            <span class="lang-en">Our products are BSCI certified and crafted using 100% biodegradable natural fibers.</span><span class="lang-ja">当社の製品はBSCI認定を受けており、100%生分解性の天然繊維を使用して作られています。</span><span class="lang-ko">당사의 제품은 BSCI 인증을 받았으며 100% 생분해성 천연 섬유를 사용하여 제작되었습니다.</span><span class="lang-de">Unsere Produkte sind BSCI-zertifiziert und werden zu 100 % aus biologisch abbaubaren Naturfasern hergestellt.</span><span class="lang-fr">Nos produits sont certifiés BSCI et fabriqués à partir de fibres naturelles 100 % biodégradables.</span>
+                        </p>
+                        <a href="#">
+                            <span class="lang-vi">Tìm hiểu quy trình</span>
+                            <span class="lang-en">Learn about our process</span><span class="lang-ja">私たちのプロセスについて学ぶ</span><span class="lang-ko">우리의 프로세스에 대해 알아보세요</span><span class="lang-de">Erfahren Sie mehr über unseren Prozess</span><span class="lang-fr">Découvrez notre processus</span>
+                        </a>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="products-main">
+                    <div class="products-toolbar flex-between">
+                        <span class="product-count">Showing products</span>
+                        <div class="sort-dropdown">
+                            <span class="lang-vi">SẮP XẾP: MỚI NHẤT</span><span class="lang-en">SORT BY: NEWEST</span><span class="lang-ja">並べ替え: 最新順</span><span class="lang-ko">정렬 기준: 최신순</span><span class="lang-de">SORTIEREN NACH: NEUESTE</span><span class="lang-fr">TRIER PAR : LES PLUS RÉCENTS</span>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="product-grid" id="productGrid">
+                        <!-- New Product 1 -->
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.1s" data-category="hyacinth_products" data-id="KIDS-WH-BUNNY-SET3">
+                            <div class="product-img-wrapper">
+                                <img src="./images/prod_bunny_basket.png" alt="Kids Crochet Bunny Water Hyacinth Basket" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category">
+                                        <span class="lang-vi">SẢN PHẨM LỤC BÌNH</span><span class="lang-en">WATER HYACINTH</span><span class="lang-ja">ウォーターヒヤシンス</span><span class="lang-ko">부레옥잠</span><span class="lang-de">WASSERHYAZINTHE</span><span class="lang-fr">JACINTHE D'EAU</span>
+                                    </span>
+                                    <span class="product-sku">KIDS-WH-BUNNY-SET3</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Giỏ Lục Bình Thỏ Con (Bộ 3)</span><span class="lang-en">Kids Crochet Bunny Water Hyacinth Basket</span><span class="lang-ja">ウサギのウォーターヒヤシンスバスケット</span><span class="lang-ko">토끼 워터히아신스 바구니</span><span class="lang-de">Hasen-Wasserhyazinthen-Korb</span><span class="lang-fr">Panier en Jacinthe d'Eau Lapin</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Lục bình tự nhiên đan len họa tiết</span><span class="lang-en">Material: Natural Water Hyacinth and Crochet details</span><span class="lang-ja">素材: 天然ウォーターヒヤシンスとクロシェ編み</span><span class="lang-ko">소재: 천연 워터히아신스 및 크로셰 디테일</span><span class="lang-de">Material: Natürliche Wasserhyazinthe und Häkeldetails</span><span class="lang-fr">Matériel: Jacinthe d'eau naturelle et détails au crochet</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline">ECO-FRIENDLY</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- New Product 2 -->
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.2s" data-category="hyacinth_products" data-id="MIXH-006">
+                            <div class="product-img-wrapper">
+                                <img src="./images/prod_hyacinth_mix.png" alt="Hyacinth Mix Set" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category">
+                                        <span class="lang-vi">SẢN PHẨM LỤC BÌNH</span><span class="lang-en">WATER HYACINTH</span><span class="lang-ja">ウォーターヒヤシンス</span><span class="lang-ko">부레옥잠</span><span class="lang-de">WASSERHYAZINTHE</span><span class="lang-fr">JACINTHE D'EAU</span>
+                                    </span>
+                                    <span class="product-sku">MIXH-006</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Bộ Giỏ Lục Bình Đa Năng</span><span class="lang-en">Hyacinth Mix Set</span><span class="lang-ja">ヒヤシンスミックスセット</span><span class="lang-ko">히아신스 믹스 세트</span><span class="lang-de">Hyazinthen-Mix-Set</span><span class="lang-fr">Ensemble Mixte en Jacinthe</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Lục bình tự nhiên đan kín</span><span class="lang-en">Material: Tightly woven natural water hyacinth</span><span class="lang-ja">素材: しっかりと編み込まれた天然ウォーターヒヤシンス</span><span class="lang-ko">소재: 촘촘하게 엮은 천연 워터히아신스</span><span class="lang-de">Material: Eng geflochtene natürliche Wasserhyazinthe</span><span class="lang-fr">Matériel: Jacinthe d'eau naturelle tressée serrée</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline">ECO-FRIENDLY</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- New Product 3 -->
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.3s" data-category="hyacinth_products" data-id="LANH-001">
+                            <div class="product-img-wrapper">
+                                <img src="./images/prod_hyacinth_candle.png" alt="Hyacinth Candle Holder" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category">
+                                        <span class="lang-vi">SẢN PHẨM LỤC BÌNH</span><span class="lang-en">WATER HYACINTH</span><span class="lang-ja">ウォーターヒヤシンス</span><span class="lang-ko">부레옥잠</span><span class="lang-de">WASSERHYAZINTHE</span><span class="lang-fr">JACINTHE D'EAU</span>
+                                    </span>
+                                    <span class="product-sku">LANH-001</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Đèn Lồng Lục Bình</span><span class="lang-en">Hyacinth Candle Holder</span><span class="lang-ja">ヒヤシンスキャンドルホルダー</span><span class="lang-ko">히아신스 캔들 홀더</span><span class="lang-de">Hyazinthen-Kerzenhalter</span><span class="lang-fr">Bougeoir en Jacinthe</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Lục bình tự nhiên đan thưa nghệ thuật</span><span class="lang-en">Material: Artistic open-weave natural water hyacinth</span><span class="lang-ja">素材: 芸術的な透かし編みの天然ウォーターヒヤシンス</span><span class="lang-ko">소재: 예술적인 오픈 위브 천연 워터히아신스</span><span class="lang-de">Material: Künstlerisch offen geflochtene Wasserhyazinthe</span><span class="lang-fr">Matériel: Jacinthe d'eau naturelle tressée de manière artistique</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline">BSCI CERTIFIED</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- New Product 4 -->
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.4s" data-category="hyacinth_products" data-id="FURH-002">
+                            <div class="product-img-wrapper">
+                                <img src="./images/prod_hyacinth_pouf.png" alt="Hyacinth Pouf" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category">
+                                        <span class="lang-vi">SẢN PHẨM LỤC BÌNH</span><span class="lang-en">WATER HYACINTH</span><span class="lang-ja">ウォーターヒヤシンス</span><span class="lang-ko">부레옥잠</span><span class="lang-de">WASSERHYAZINTHE</span><span class="lang-fr">JACINTHE D'EAU</span>
+                                    </span>
+                                    <span class="product-sku">FURH-002</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Đôn Lục Bình Vuông</span><span class="lang-en">Hyacinth Pouf</span><span class="lang-ja">ヒヤシンスプーフ</span><span class="lang-ko">히아신스 푸프</span><span class="lang-de">Hyazinthen-Pouf</span><span class="lang-fr">Pouf en Jacinthe</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Lục bình đan trên khung gỗ chắc chắn</span><span class="lang-en">Material: Natural water hyacinth woven over a sturdy wooden frame</span><span class="lang-ja">素材: 丈夫な木製フレームに天然ウォーターヒヤシンス</span><span class="lang-ko">소재: 튼튼한 나무 프레임에 천연 워터히아신스</span><span class="lang-de">Material: Wasserhyazinthe über einem stabilen Holzrahmen</span><span class="lang-fr">Matériel: Jacinthe d'eau tissée sur un cadre en bois</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline">BSCI CERTIFIED</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 1 -->
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.1s" data-category="hyacinth_products" data-id="KVB-120A">
+                            <div class="product-img-wrapper">
+                                <img src="./images/prod_basket_1.png" alt="Tapered Round Woven Baskets" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category"><span class="lang-vi">SẢN PHẨM LỤC BÌNH</span><span class="lang-en">WATER HYACINTH</span><span class="lang-ja">ウォーターヒヤシンス</span><span class="lang-ko">부레옥잠</span><span class="lang-de">WASSERHYAZINTHE</span><span class="lang-fr">JACINTHE D'EAU</span></span>
+                                    <span class="product-sku">KVB-120A</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Giỏ Lục Bình Tròn</span>
+                                    <span class="lang-en">Tapered Round Woven Baskets</span><span class="lang-ja">テーパードラウンド編みバスケット</span><span class="lang-ko">테이퍼 라운드 직조 바구니</span><span class="lang-de">Konische runde geflochtene Körbe</span><span class="lang-fr">Paniers tissés ronds effilés</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Lục bình & Vải lót</span>
+                                    <span class="lang-en">Material: Water Hyacinth with Cotton Lining</span><span class="lang-ja">素材: ウォーターヒヤシンス、コットン裏地</span><span class="lang-ko">소재: 면 안감이 있는 워터 히아신스</span><span class="lang-de">Material: Wasserhyazinthe mit Baumwollfutter</span><span class="lang-fr">Matériau : Jacinthe d'eau avec doublure en coton</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline">BSCI CERTIFIED</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.2s" data-category="grass_straws" data-id="KVB-52B">
+                            <div class="product-img-wrapper">
+                                <img src="./images/ong_hut_co_bang.jpg" alt="Eco-friendly Grass Straws" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category"><span class="lang-vi">ỐNG HÚT CỎ BÀNG</span><span class="lang-en">GRASS STRAWS</span><span class="lang-ja">草ストロー</span><span class="lang-ko">잔디 빨대</span><span class="lang-de">GRASSTROHHALME</span><span class="lang-fr">PAILLES D'HERBE</span></span>
+                                    <span class="product-sku">KVB-52B</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Ống Hút Cỏ Bàng Tự Nhiên</span>
+                                    <span class="lang-en">Natural Grass Straws Bundle</span><span class="lang-ja">天然草ストロー束</span><span class="lang-ko">천연잔디 빨대 묶음</span><span class="lang-de">Bündel aus Naturgrasstrohhalmen</span><span class="lang-fr">Paquet de pailles d'herbe naturelle</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Cỏ bàng tự nhiên 100%</span>
+                                    <span class="lang-en">Material: 100% Natural Lepironia Grass</span><span class="lang-ja">素材: 100% 天然レピロニア草</span><span class="lang-ko">소재: 100% 천연 레피로니아 잔디</span><span class="lang-de">Material: 100 % natürliches Lepironiagras</span><span class="lang-fr">Matériau : herbe de Lepironia 100 % naturelle.</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline text-accent">ECO-FRIENDLY</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        
+
+                        <!-- Product 3 -->
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.3s" data-category="hyacinth_products" data-id="KVB-1800W">
+                            <div class="product-img-wrapper">
+                                <img src="./images/prod_trunk_1.png" alt="Large Lidded Storage Trunk" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category"><span class="lang-vi">SẢN PHẨM LỤC BÌNH</span><span class="lang-en">WATER HYACINTH</span><span class="lang-ja">ウォーターヒヤシンス</span><span class="lang-ko">부레옥잠</span><span class="lang-de">WASSERHYAZINTHE</span><span class="lang-fr">JACINTHE D'EAU</span></span>
+                                    <span class="product-sku">KVB-1800W</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Rương Lục Bình Có Nắp</span>
+                                    <span class="lang-en">Large Lidded Storage Trunk</span><span class="lang-ja">大型蓋付き収納トランク</span><span class="lang-ko">대형 뚜껑이 달린 보관 트렁크</span><span class="lang-de">Großer Aufbewahrungskoffer mit Deckel</span><span class="lang-fr">Grand coffre de rangement avec couvercle</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Lục bình đan</span>
+                                    <span class="lang-en">Material: Braided Water Hyacinth</span><span class="lang-ja">素材: 編み込みウォーターヒヤシンス</span><span class="lang-ko">소재: 땋은 물 히아신스</span><span class="lang-de">Material: Geflochtene Wasserhyazinthe</span><span class="lang-fr">Matériau : Jacinthe d'eau tressée</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline">BESTSELLER</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.4s" data-category="bamboo_products" data-id="KVB-3101">
+                            <div class="product-img-wrapper">
+                                <img src="./images/prod_wall_1.png" alt="Wall-Hanging Teardrop Basket" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category"><span class="lang-vi">SẢN PHẨM TRE NỨA</span><span class="lang-en">BAMBOO PRODUCTS</span><span class="lang-ja">竹製品</span><span class="lang-ko">대나무 제품</span><span class="lang-de">BAMBUSPRODUKTE</span><span class="lang-fr">PRODUITS EN BAMBOU</span></span>
+                                    <span class="product-sku">KVB-3101</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Giỏ Tre Treo Tường</span>
+                                    <span class="lang-en">Wall-Hanging Teardrop Basket</span><span class="lang-ja">壁掛けティアドロップバスケット</span><span class="lang-ko">벽걸이 눈물바구니</span><span class="lang-de">Wandhängender Tropfenkorb</span><span class="lang-fr">Panier en forme de larme à suspendre au mur</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Tre chẻ tự nhiên</span>
+                                    <span class="lang-en">Material: Split Bamboo</span><span class="lang-ja">材質: 割竹</span><span class="lang-ko">자료: 쪼개지는 대나무</span><span class="lang-de">Material: Gespaltener Bambus</span><span class="lang-fr">Matériel: Bambou fendu</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline">WALL MOUNTED</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 5 -->
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.1s" data-category="hyacinth_products" data-id="KVB-2100-4">
+                            <div class="product-img-wrapper">
+                                <img src="./images/prod_basket_3.png" alt="Nested Utility Baskets" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category"><span class="lang-vi">SẢN PHẨM LỤC BÌNH</span><span class="lang-en">WATER HYACINTH</span><span class="lang-ja">ウォーターヒヤシンス</span><span class="lang-ko">부레옥잠</span><span class="lang-de">WASSERHYAZINTHE</span><span class="lang-fr">JACINTHE D'EAU</span></span>
+                                    <span class="product-sku">KVB-2100-4</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Bộ Giỏ Lục Bình Đa Năng</span>
+                                    <span class="lang-en">Nested Utility Baskets</span><span class="lang-ja">入れ子式ユーティリティバスケット</span><span class="lang-ko">중첩된 유틸리티 바구니</span><span class="lang-de">Ineinander verschachtelte Mehrzweckkörbe</span><span class="lang-fr">Paniers utilitaires imbriqués</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Lục bình</span>
+                                    <span class="lang-en">Material: Water Hyacinth</span><span class="lang-ja">素材: ウォーターヒヤシンス</span><span class="lang-ko">소재: 워터 히아신스</span><span class="lang-de">Material: Wasserhyazinthe</span><span class="lang-fr">Matériau : Jacinthe d'eau</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline text-accent">SPACE SAVING</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- New Products 6-11 -->
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.2s" data-category="hyacinth_products" data-id="KVB-NEW1">
+                            <div class="product-img-wrapper">
+                                <img src="./images/new_prod_hyacinth.png" alt="Premium Water Hyacinth Basket" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category"><span class="lang-vi">SẢN PHẨM LỤC BÌNH</span><span class="lang-en">WATER HYACINTH</span><span class="lang-ja">ウォーターヒヤシンス</span><span class="lang-ko">부레옥잠</span><span class="lang-de">WASSERHYAZINTHE</span><span class="lang-fr">JACINTHE D'EAU</span></span>
+                                    <span class="product-sku">KVB-NEW1</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Giỏ Lục Bình Cao Cấp</span>
+                                    <span class="lang-en">Premium Water Hyacinth Basket</span><span class="lang-ja">プレミアムウォーターヒヤシンスバスケット</span><span class="lang-ko">프리미엄 부레옥잠 바구니</span><span class="lang-de">Premium-Korb aus Wasserhyazinthe</span><span class="lang-fr">Panier Premium en Jacinthe d'Eau</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Lục bình đan tay</span>
+                                    <span class="lang-en">Material: Handwoven Water Hyacinth</span><span class="lang-ja">素材: 手織りウォーターヒヤシンス</span><span class="lang-ko">소재: 손으로 짠 워터 히아신스</span><span class="lang-de">Material: Handgewebte Wasserhyazinthe</span><span class="lang-fr">Matériau : Jacinthe d'eau tissée à la main</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline">NEW</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.3s" data-category="bamboo_products" data-id="KVB-NEW2">
+                            <div class="product-img-wrapper">
+                                <img src="./images/new_prod_bamboo.png" alt="Elegant Bamboo Tray" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category"><span class="lang-vi">SẢN PHẨM TRE NỨA</span><span class="lang-en">BAMBOO PRODUCTS</span><span class="lang-ja">竹製品</span><span class="lang-ko">대나무 제품</span><span class="lang-de">BAMBUSPRODUKTE</span><span class="lang-fr">PRODUITS EN BAMBOU</span></span>
+                                    <span class="product-sku">KVB-NEW2</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Khay Tre Phục Vụ</span>
+                                    <span class="lang-en">Elegant Bamboo Serving Tray</span><span class="lang-ja">エレガントな竹製サービングトレイ</span><span class="lang-ko">우아한 대나무 서빙 트레이</span><span class="lang-de">Elegantes Serviertablett aus Bambus</span><span class="lang-fr">Plateau de service élégant en bambou</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Tre tự nhiên</span>
+                                    <span class="lang-en">Material: Natural Bamboo</span><span class="lang-ja">素材: 天然竹</span><span class="lang-ko">소재: 천연 대나무</span><span class="lang-de">Material: Natürlicher Bambus</span><span class="lang-fr">Matériel: Bambou Naturel</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline">NEW</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.1s" data-category="reed_straws" data-id="KVB-NEW4">
+                            <div class="product-img-wrapper">
+                                <img src="./images/ong_hut_say.jpeg" alt="Premium Reed Straws" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category"><span class="lang-vi">ỐNG HÚT SẬY</span><span class="lang-en">REED STRAWS</span><span class="lang-ja">葦わら</span><span class="lang-ko">갈대 빨대</span><span class="lang-de">REED-STROHHALME</span><span class="lang-fr">PAILLES EN ROED</span></span>
+                                    <span class="product-sku">KVB-NEW4</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Ống Hút Sậy Tự Nhiên</span>
+                                    <span class="lang-en">Premium Reed Straws Bundle</span><span class="lang-ja">プレミアムリードストローバンドル</span><span class="lang-ko">프리미엄 갈대 빨대 번들</span><span class="lang-de">Premium-Strohhalme aus Schilfrohr</span><span class="lang-fr">Lot de pailles en roseau de qualité supérieure.</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Thân cây sậy tự nhiên</span>
+                                    <span class="lang-en">Material: Natural Reed</span><span class="lang-ja">素材: 天然リード</span><span class="lang-ko">자료: 자연적인 갈대</span><span class="lang-de">Material: Natürliches Schilfrohr</span><span class="lang-fr">Matériel: Roseau Naturel</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline">PREMIUM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.2s" data-category="sugarcane_straws" data-id="KVB-NEW5">
+                            <div class="product-img-wrapper">
+                                <img src="./images/new_prod_sugarcane.png" alt="Sugarcane Straws" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category"><span class="lang-vi">ỐNG HÚT BÃ MÍA</span><span class="lang-en">SUGARCANE STRAWS</span><span class="lang-ja">サトウキビストロー</span><span class="lang-ko">사탕수수 빨대</span><span class="lang-de">Zuckerrohr-Strohhalme</span><span class="lang-fr">PAILLES DE CANNE À SUCRE</span></span>
+                                    <span class="product-sku">KVB-NEW5</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Ống Hút Bã Mía</span>
+                                    <span class="lang-en">Eco-friendly Sugarcane Straws</span><span class="lang-ja">環境に優しいサトウキビストロー</span><span class="lang-ko">친환경 사탕수수 빨대</span><span class="lang-de">Umweltfreundliche Zuckerrohrstrohhalme</span><span class="lang-fr">Pailles de canne à sucre écologiques</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Bã mía nguyên chất</span>
+                                    <span class="lang-en">Material: Upcycled Sugarcane Bagasse</span><span class="lang-ja">素材: アップサイクルサトウキビバガス</span><span class="lang-ko">재료: 업사이클된 사탕수수 사탕수수</span><span class="lang-de">Material: Upcycled Zuckerrohrbagasse</span><span class="lang-fr">Matériau : Bagasse de canne à sucre recyclée</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline text-accent">COMPOSTABLE</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.3s" data-category="paper_straws" data-id="KVB-NEW6">
+                            <div class="product-img-wrapper">
+                                <img src="./images/ong_hut_giay.jpg" alt="Durable Paper Straws" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category"><span class="lang-vi">ỐNG HÚT GIẤY</span><span class="lang-en">PAPER STRAWS</span><span class="lang-ja">紙ストロー</span><span class="lang-ko">종이 빨대</span><span class="lang-de">PAPIERSTROHHALME</span><span class="lang-fr">PAILLES EN PAPIER</span></span>
+                                    <span class="product-sku">KVB-NEW6</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Ống Hút Giấy Cao Cấp</span>
+                                    <span class="lang-en">Durable Paper Straws</span><span class="lang-ja">耐久性のある紙ストロー</span><span class="lang-ko">튼튼한 종이 빨대</span><span class="lang-de">Langlebige Papierstrohhalme</span><span class="lang-fr">Pailles en papier durables</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Giấy Kraft phân hủy sinh học</span>
+                                    <span class="lang-en">Material: Biodegradable Kraft Paper</span><span class="lang-ja">素材: 生分解性クラフト紙</span><span class="lang-ko">자료: 생분해성 크래프트 종이</span><span class="lang-de">Material: Biologisch abbaubares Kraftpapier</span><span class="lang-fr">Matériau : papier kraft biodégradable</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline text-accent">ECO-FRIENDLY</span>
+                                </div>
+                            </div>
+                        </div>
+<div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.1s" data-category="bamboo_products" data-id="KVB-NEW7">
+                            <div class="product-img-wrapper">
+                                <img src="./images/den_tha_tran_tre_dan.png" alt="Đèn thả trần tre đan" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category"><span class="lang-vi">SẢN PHẨM TRE NỨA</span><span class="lang-en">BAMBOO PRODUCTS</span><span class="lang-ja">竹製品</span><span class="lang-ko">대나무 제품</span><span class="lang-de">BAMBUSPRODUKTE</span><span class="lang-fr">PRODUITS EN BAMBOU</span></span>
+                                    <span class="product-sku">KVB-NEW7</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Đèn thả trần tre đan</span>
+                                    <span class="lang-en">Bamboo Woven Pendant Light</span><span class="lang-ja">竹編みペンダントライト</span><span class="lang-ko">대나무 엮은 펜던트 조명</span><span class="lang-de">Geflochtene Bambus-Pendelleuchte</span><span class="lang-fr">Suspension en bambou tressé</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Tre tự nhiên</span>
+                                    <span class="lang-en">Material: Natural Bamboo</span><span class="lang-ja">素材: 天然竹</span><span class="lang-ko">소재: 천연 대나무</span><span class="lang-de">Material: Natürlicher Bambus</span><span class="lang-fr">Matériel: Bambou Naturel</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline text-accent">NEW</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.2s" data-category="bamboo_products" data-id="KVB-NEW8">
+                            <div class="product-img-wrapper">
+                                <img src="./images/den_tre_nua_dan_dang_long.png" alt="Đèn tre nứa đan dáng lồng" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category"><span class="lang-vi">SẢN PHẨM TRE NỨA</span><span class="lang-en">BAMBOO PRODUCTS</span><span class="lang-ja">竹製品</span><span class="lang-ko">대나무 제품</span><span class="lang-de">BAMBUSPRODUKTE</span><span class="lang-fr">PRODUITS EN BAMBOU</span></span>
+                                    <span class="product-sku">KVB-NEW8</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Đèn tre nứa đan dáng lồng</span>
+                                    <span class="lang-en">Cage-shaped Bamboo Lamp</span><span class="lang-ja">ケージ型竹ランプ</span><span class="lang-ko">케이지 형태의 대나무 램프</span><span class="lang-de">Käfigförmige Bambuslampe</span><span class="lang-fr">Lampe en bambou en forme de cage</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Tre tự nhiên</span>
+                                    <span class="lang-en">Material: Natural Bamboo</span><span class="lang-ja">素材: 天然竹</span><span class="lang-ko">소재: 천연 대나무</span><span class="lang-de">Material: Natürlicher Bambus</span><span class="lang-fr">Matériel: Bambou Naturel</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline text-accent">NEW</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.3s" data-category="bamboo_products" data-id="KVB-NEW9">
+                            <div class="product-img-wrapper">
+                                <img src="./images/hop_dung_tre_nua_chia_ngan_da_nang.png" alt="Hộp đựng tre nứa chia ngăn đa năng" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category"><span class="lang-vi">SẢN PHẨM TRE NỨA</span><span class="lang-en">BAMBOO PRODUCTS</span><span class="lang-ja">竹製品</span><span class="lang-ko">대나무 제품</span><span class="lang-de">BAMBUSPRODUKTE</span><span class="lang-fr">PRODUITS EN BAMBOU</span></span>
+                                    <span class="product-sku">KVB-NEW9</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Hộp đựng tre nứa chia ngăn đa năng</span>
+                                    <span class="lang-en">Multi-compartment Bamboo Storage Box</span><span class="lang-ja">多区画竹製収納ボックス</span><span class="lang-ko">다용도 대나무 수납함</span><span class="lang-de">Bambus-Aufbewahrungsbox mit mehreren Fächern</span><span class="lang-fr">Boîte de rangement en bambou à plusieurs compartiments</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Tre tự nhiên</span>
+                                    <span class="lang-en">Material: Natural Bamboo</span><span class="lang-ja">素材: 天然竹</span><span class="lang-ko">소재: 천연 대나무</span><span class="lang-de">Material: Natürlicher Bambus</span><span class="lang-fr">Matériel: Bambou Naturel</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline text-accent">NEW</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card animate-on-scroll fade-in-up" style="transition-delay: 0.4s" data-category="bamboo_products" data-id="KVB-NEW10">
+                            <div class="product-img-wrapper">
+                                <img src="./images/hop_tre_nua_dan_tron_co_nap_cai.png" alt="Hộp tre nứa đan tròn có nắp cài" class="animate-on-scroll zoom-in">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-meta flex-between">
+                                    <span class="product-category"><span class="lang-vi">SẢN PHẨM TRE NỨA</span><span class="lang-en">BAMBOO PRODUCTS</span><span class="lang-ja">竹製品</span><span class="lang-ko">대나무 제품</span><span class="lang-de">BAMBUSPRODUKTE</span><span class="lang-fr">PRODUITS EN BAMBOU</span></span>
+                                    <span class="product-sku">KVB-NEW10</span>
+                                </div>
+                                <h3 class="product-title animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Hộp tre nứa đan tròn có nắp cài</span>
+                                    <span class="lang-en">Round Woven Bamboo Box with Latch</span><span class="lang-ja">ラッチ付き丸型竹編みボックス</span><span class="lang-ko">걸쇠가 있는 둥근 대나무 엮은 상자</span><span class="lang-de">Runde gewebte Bambusbox mit Riegel</span><span class="lang-fr">Boîte ronde en bambou tressé avec loquet</span>
+                                </h3>
+                                <p class="product-material animate-on-scroll fade-in-up">
+                                    <span class="lang-vi">Chất liệu: Tre tự nhiên</span>
+                                    <span class="lang-en">Material: Natural Bamboo</span><span class="lang-ja">素材: 天然竹</span><span class="lang-ko">소재: 천연 대나무</span><span class="lang-de">Material: Natürlicher Bambus</span><span class="lang-fr">Matériel: Bambou Naturel</span>
+                                </p>
+                                <div class="product-badges">
+                                    <span class="badge-outline text-accent">NEW</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Product Detail Modal -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-content new-modal-layout">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body-scrollable">
+                <div class="modal-gallery-vertical">
+                    <div class="gallery-main">
+                        <img id="modalMainImg" src="" alt="Product Main Image" class="animate-on-scroll zoom-in">
+                    </div>
+                    <div class="gallery-thumbnails" id="modalThumbnails">
+                        <!-- Thumbnails injected here -->
+                    </div>
+                </div>
+                <div class="modal-info-new">
+                    <h2 class="modal-title-large animate-on-scroll fade-in-up" id="modalTitle"></h2>
+                    <div class="modal-subtitle-red" id="modalSubtitle"></div>
+                    
+                    <div class="modal-specs-list">
+                        <p class="animate-on-scroll fade-in-up"><strong>Item No:</strong> <span id="modalSku"></span></p>
+                        <p class="animate-on-scroll fade-in-up"><strong>Material:</strong> <span id="modalMaterial"></span></p>
+                        <p class="animate-on-scroll fade-in-up"><strong>Color:</strong> <span id="modalColor"></span></p>
+                        <p class="animate-on-scroll fade-in-up"><strong>MOQ:</strong> <span id="modalMoq"></span></p>
+                        <p class="animate-on-scroll fade-in-up"><strong>Payment term:</strong> <span id="modalPayment"></span></p>
+                        <p class="usage-text animate-on-scroll fade-in-up"><strong>USAGE:</strong> <span id="modalUsage"></span></p>
+                    </div>
+
+                    <div class="modal-new-actions">
+                        <a href="./contact.html" class="btn-dark-full">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            Contact
+                        </a>
+                        <a href="https://wa.me/84907106568" class="btn-dark-full">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            +84 907 106 568
+                        </a>
+                    </div>
+
+                    <div class="modal-information-box">
+                        <div class="info-header">INFORMATION</div>
+                        <div class="info-body">
+                            <p id="modalInformationText" class="animate-on-scroll fade-in-up"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark-gray text-light">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="./index.html" class="logo"><img src="./images/logo.png?v=4" alt="VIETCRAFTERS" style="height: 40px; width: auto; display: block;"></a>
+                <p class="footer-desc animate-on-scroll fade-in-up">
+                    <span class="lang-vi">CÔNG TY TNHH MTV TRE VIỆT - Công ty hàng đầu xuất khẩu đồ thủ công mỹ nghệ Việt Nam, phục vụ thị trường toàn cầu.</span>
+                    <span class="lang-en">VIET BAMBOO CO., LTD - Leading manufacturer of sustainable handicrafts in Vietnam, serving the global export market.</span><span class="lang-ja">ベトナムバンブー有限会社 - ベトナムの持続可能な手工芸品の大手メーカーであり、世界の輸出市場にサービスを提供しています。</span><span class="lang-ko">베트남 뱀부 유한책임회사 - 베트남의 지속 가능한 수공예품 제조업체로 글로벌 수출 시장에 서비스를 제공하고 있습니다.</span><span class="lang-de">VIETCRAFTERS – Führender Hersteller von nachhaltigem Kunsthandwerk in Vietnam, der den globalen Exportmarkt bedient.</span><span class="lang-fr">VIET BAMBOO SARL - Premier fabricant d'artisanat durable au Vietnam, au service du marché d'exportation mondial.</span>
+                </p>
+                <div class="footer-contact" style="margin-top: 1rem; color: #ccc;">
+                    <span class="lang-vi">
+              <strong>CÔNG TY TNHH MTV TRE VIỆT</strong><br>
+              <strong>Địa chỉ:</strong> 6075 phố Mỹ Hưng 1, phường Cái Vồn, Tỉnh Vĩnh Long<br>
+              <strong>Số điện thoại:</strong> +84 907106568<br>
+              <strong>Email:</strong> Info@vietcrafters.com
+            </span>
+            <span class="lang-en">
+              <strong>VIET BAMBOO CO., LTD</strong><br>
+              <strong>Address:</strong> 6075 My Hung 1 Street, Cai Von Ward, Vinh Long Province<br>
+              <strong>Phone:</strong> +84 907106568<br>
+              <strong>Email:</strong> Info@vietcrafters.com
+            </span>
+            <span class="lang-ja">
+              <strong>ベトナムバンブー有限会社</strong><br>
+              <strong>住所:</strong> ヴィンロン省カイヴォン区ミーフン1通り6075番地<br>
+              <strong>電話:</strong> +84 907106568<br>
+              <strong>Eメール:</strong> Info@vietcrafters.com
+            </span>
+            <span class="lang-ko">
+              <strong>베트남 뱀부 유한책임회사</strong><br>
+              <strong>주소:</strong> 빈롱성 까이본 프엉 미흥 1거리 6075번지<br>
+              <strong>전화:</strong> +84 907106568<br>
+              <strong>이메일:</strong> Info@vietcrafters.com
+            </span>
+            <span class="lang-de">
+              <strong>VIET BAMBOO GmbH</strong><br>
+              <strong>Adresse:</strong> 6075 My Hung 1 Straße, Bezirk Cai Von, Provinz Vinh Long<br>
+              <strong>Telefon:</strong> +84 907106568<br>
+              <strong>E-Mail:</strong> Info@vietcrafters.com
+            </span>
+            <span class="lang-fr">
+              <strong>VIET BAMBOO SARL</strong><br>
+              <strong>Adresse:</strong> 6075 rue My Hung 1, quartier Cai Von, province de Vinh Long<br>
+              <strong>Téléphone:</strong> +84 907106568<br>
+              <strong>E-mail:</strong> Info@vietcrafters.com
+            </span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h5 class="footer-title">
+                        <span class="lang-vi">Điều hướng</span><span class="lang-en">Navigation</span><span class="lang-ja">ナビゲーション</span><span class="lang-ko">항해</span><span class="lang-de">Navigation</span><span class="lang-fr">Navigation</span>
+                    </h5>
+                    <ul>
+                        <li><a href="./index.html"><span class="lang-vi">Trang chủ</span><span class="lang-en">Home</span><span class="lang-ja">家</span><span class="lang-ko">집</span><span class="lang-de">Heim</span><span class="lang-fr">Maison</span></a></li>
+                        <li><a href="./products.html"><span class="lang-vi">Sản phẩm</span><span class="lang-en">Products</span><span class="lang-ja">製品</span><span class="lang-ko">제품</span><span class="lang-de">Produkte</span><span class="lang-fr">Produits</span></a></li>
+                        <li><a href="./materials.html"><span class="lang-vi">Vật liệu</span><span class="lang-en">Materials</span><span class="lang-ja">材料</span><span class="lang-ko">재료</span><span class="lang-de">Materialien</span><span class="lang-fr">Matériels</span></a></li>
+                        <li><a href="./about.html"><span class="lang-vi">Về chúng tôi</span><span class="lang-en">About Us</span><span class="lang-ja">について</span><span class="lang-ko">에 대한</span><span class="lang-de">Um</span><span class="lang-fr">À propos</span></a></li>
+                        <li><a href="./contact.html"><span class="lang-vi">Liên hệ</span><span class="lang-en">Contact US</span><span class="lang-ja">接触</span><span class="lang-ko">연락하다</span><span class="lang-de">Kontakt</span><span class="lang-fr">Contact</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5 class="footer-title">
+                        <span class="lang-vi">Pháp lý</span><span class="lang-en">Legal</span><span class="lang-ja">法律上の</span><span class="lang-ko">합법적인</span><span class="lang-de">Legal</span><span class="lang-fr">Légal</span>
+                    </h5>
+                    <ul>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">BSCI Audit</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p class="animate-on-scroll fade-in-up">&copy; 2026 CÔNG TY TNHH MTV TRE VIỆT. Artisanal Excellence. BSCI Certified.</p>
+        </div>
+    </footer>
+    <script type="module" src="./src/js/productData.js"></script>
+    <script type="module" src="./src/js/main.js"></script>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/84907106568" target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2a13.9 13.9 0 0 0-11.8 21.2L2 30l6.9-2.1A13.9 13.9 0 1 0 16 2zm0 25.5A11.6 11.6 0 0 1 10.1 26l-4.5 1.4 1.4-4.4a11.6 11.6 0 1 1 9-20.5A11.6 11.6 0 0 1 16 27.5z" fill="#fff" />
+            <path d="M22.8 20.3c-.3-.2-2-.9-2.3-1-.3-.2-.5-.2-.7.2-.2.3-.9 1-1.1 1.2-.2.3-.5.3-.8.2-.3-.2-1.4-.5-2.6-1.6-1-1-1.3-1.6-1.5-1.9-.2-.3 0-.4.1-.6.2-.2.4-.4.5-.6.2-.2.3-.4.4-.6s0-.4-.1-.6c-.1-.2-.7-1.8-.9-2.4-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9 0 1.7 1.3 3.4 1.4 3.6.2.2 2.5 3.8 6 5.3.8.3 1.5.5 2 .7.8.2 1.5.2 2.1.1.6-.1 2-.8 2.3-1.6.3-.8.3-1.4.2-1.6-.1-.2-.4-.3-.7-.5z" fill="#fff" /></svg>
+    </a>
+</body>
+
+</html>
